@@ -64,6 +64,4 @@ app.get('/', (req, res) => {
     res.send('Hello Ema-John')
 })
 
-app.listen(port, () => {
-    console.log('server is listening');
-})
+app.listen( process.env.PORT || port);
